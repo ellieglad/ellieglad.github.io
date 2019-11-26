@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+# My GitHub.
 
-You can use the [editor on GitHub](https://github.com/pingio/pingio.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+My GitHub account can be found at [https://github.com/pingio/]()
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Projects
 
-### Markdown
+### Todo
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+![Todo UI](https://camo.githubusercontent.com/34fde8a6ffd69d3da1087f1e3829ad11093e6d20/68747470733a2f2f6173736574732e70696e672e6c6f6c2f66696c6575706c6f6164732f546f446f4170705f323031372d31322d33315f30322d33392d35382e706e67)
 
-- Bulleted
-- List
+Todo is a simple Kanban app created in C# with WPF. It supports drag and drop for the items, and supports as many different columns as is wished.  
 
-1. Numbered
-2. List
+Kanban project files are saved in a .todo file format, but does support reading and saving in other formats as well, such as .txt, as long as the format of the JSON content in it is correct.
 
-**Bold** and _Italic_ and `Code` text
+[GitHub Link]( https://github.com/pingio/todo )
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### Fulmo
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pingio/pingio.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Fulmo is a Lightning location viewer and notifying app for Android. Built in Kotlin, it will show where recent lightning strikes have occurred, and also have the ability to notify the user about lightning that has struck nearby. 
 
-### Support or Contact
+Fulmo was a collaborative project between myself and a group of other students at the University of Oslo.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[Github link]( https://github.com/pingio/Fulmo )
+
+
+
+### Storysite
+
+Storysite is a website for hosting short stories. Built with Python and the Flask framework, it allows the creation of accounts and sharing of short stories, with commenting and ratings.
+
+[GitHub link]( https://github.com/pingio/storysite )
