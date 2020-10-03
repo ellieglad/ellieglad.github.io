@@ -1,3 +1,38 @@
-remote_theme: aterenin/minima-reboot
-excerpt_separator: <!--more-->
+### your site title here
+
 title: "Ellie Glad"
+baseurl: "" # name of the repository
+
+
+
+highlighter: rouge
+markdown: kramdown
+
+
+paginate: 5
+
+
+#optimization
+#compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+
+sass:
+  sass_dir: /assets/css/_sass
+  style: compressed
+
+include:
+  - _pages
+
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
