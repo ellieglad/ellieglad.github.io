@@ -1,41 +1,94 @@
----
-layout: default
----
-<h1 class="headline">{{site.title}}</h1>
-<div class="article-list">
-  {% for post in paginator.posts %}
-  
-  <p><h2><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-    <small class="meta">{{post.date | date: '%-d %B %Y'}}</small></p>
-    <p>{{post.excerpt | strip_html}}</p>
-  {% endfor %}
-</div>
+<!DOCTYPE html>
+<html>
 
+<head>
+	<title>Ellie Glad</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+	<style>
+		body {
+			font-family: 'Quicksand', serif;
+		}
 
+		body {
+			width: 50%;
+			margin: auto;
+		}
 
-<!-- pagination -->
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-  {% else %}
-    <span>&laquo; Prev</span>
-  {% endif %}
+		@media screen and (max-width: 900px) {
+			body {
+				width: 80%;
+			}
+		}
 
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <span class="webjeda">{{ page }}</span>
-    {% elsif page == 1 %}
-      <a href="{{site.baseurl}}/">{{ page }}</a>
-    {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
+		.main {
+			position: relative;
+		}
 
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-  {% else %}
-    <span>Next &raquo;</span>
-  {% endif %}
-</div>
-{% endif %}
+		.footer {
+			position: absolute;
+			bottom: 0;
+			vertical-align: bottom;
+			margin-bottom: 10px;
+		}
+
+		.double-column {
+			display: flex;
+		}
+
+		.column {
+			width: 50%;
+		}
+
+		@media screen and (max-width: 900px) {
+			.double-column {
+				display: block;
+			}
+
+			.column {
+				width: 100%;
+			}
+		}
+
+		p {
+			font-size: medium;
+		}
+
+		.small {
+			font-size: small;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="main">
+		<h1>Ellie Glad</h1>
+		<hr>
+		<div class="double-column">
+			<section class="column">
+				<h2>Links and contact</h2>
+				<a href="https://github.com/ellieglad">GitHub</a>
+				<a href="https://www.linkedin.com/in/ellieglad">LinkedIn</a>
+				<p>Contact me at ellie[@]ellieglad.com</p>
+			</section>
+			<section class="column">
+				<h2>About me</h2>
+				<p>Hello<br> I'm Ellie Glad, I'm a norwegian software engineer,
+					currently working at Box.</p>
+				<p>
+					Previously worked at:<br>
+					<span class="small"><i>More information on my LinkedIn</i></span>
+				<ul>
+					<li>Leap</li>
+					<li>Oslo municipality</li>
+				</ul>
+				</p>
+			</section>
+		</div>
+	</div>
+	<section class="footer">
+		<p>Sorry for the white :)</p>
+	</section>
+</body>
+
+</html>
