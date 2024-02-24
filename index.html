@@ -15,11 +15,6 @@
 			margin: auto;
 		}
 
-		@media screen and (max-width: 900px) {
-			body {
-				width: 80%;
-			}
-		}
 
 		.main {
 			position: relative;
@@ -41,6 +36,22 @@
 		}
 
 		@media screen and (max-width: 900px) {
+
+			.center-grid {
+				grid-template-columns: auto 170px auto;
+				display: grid;
+				justify-content: center;
+			}
+
+			li {
+				text-align: left;
+			}
+
+			body {
+				text-align: center;
+				width: 80%;
+			}
+
 			.double-column {
 				display: block;
 			}
@@ -76,10 +87,18 @@
 				<p>
 					Previously worked at:<br>
 					<span class="small"><i>More information on my LinkedIn</i></span>
-				<ul>
-					<li>Leap</li>
-					<li>Oslo municipality</li>
-				</ul>
+				<div class="center-grid">
+					<div>
+
+					</div>
+					<div>
+						<ul>
+							<li>Leap</li>
+							<li>Oslo municipality</li>
+						</ul>
+
+					</div>
+				</div>
 				</p>
 			</section>
 		</div>
