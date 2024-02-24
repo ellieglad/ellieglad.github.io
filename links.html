@@ -64,15 +64,19 @@
 
 		hr {
 			display: block;
-			height: 0px;
-			border: none;
-			border-top: 2px solid black;
+			border: 0;
+			border-bottom-style: inset;
+			border-bottom: 1.5px solid black;
 		}
 
 		ul {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
+		}
+
+		.links {
+			align-self: end;
 		}
 
 		.small {
@@ -85,8 +89,9 @@
 			}
 
 			.ellie {
-				padding-bottom: 2pc;
-				border-bottom: 2px solid black;
+				padding-bottom: 1em;
+				border-bottom-style: inset;
+				border-bottom: 1.5px solid black;
 			}
 
 			.header {
@@ -110,7 +115,7 @@
 	<div class="main">
 		<div class="header">
 			<h1 class="ellie">Ellie Glad</h1>
-			<h1 class="column centre">Links</h1>
+			<h2 class="column centre links">Links</h2>
 		</div>
 		<hr>
 
